@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BATCH 2022-2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            margin-top: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .folder-container {
+            display: flex; /* Use flexbox to arrange images horizontally */
+            flex-direction: row; /* Ensure items are arranged in a row */
+            align-items: flex-start; /* Align items to the left */
+            margin-top: 10px;
+        }
+        .folder-item {
+            margin: 20px; /* Space between folder items */
+            text-align: center; /* Center the text below the image */
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition on hover */
+        }
+        .folder-image {
+            width: 130px; /* Reduced width */
+            height: auto; /* Automatically adjusts height to maintain aspect ratio */
+            cursor: pointer; /* Indicates that the image is clickable */
+            transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for scaling */
+        }
+        .folder-text {
+            font-size: 14px;
+            color: #333;
+            margin-top: 10px;
+            transition: color 0.3s ease; /* Smooth transition for text color */
+        }
+
+        /* Hover effect for folder items */
+        .folder-item:hover {
+            transform: scale(1.05); /* Slightly enlarge folder item */
+            opacity: 0.9; /* Reduce opacity */
+        }
+
+        /* Hover effect for images */
+        .folder-image:hover {
+            transform: scale(1.1); /* Slightly enlarge the image on hover */
+        }
+
+        /* Hover effect for folder text */
+        .folder-item:hover .folder-text {
+            color: #007BFF; /* Change text color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>BATCH </h1>
+
+    <div class="folder-container">
+        <div class="folder-item">
+            <a href="batch details/2022-2025/batch 2022-2025.html">
+                <img src="folder img.png" alt="Folder Image 1" class="folder-image">
+                <p class="folder-text">2022-2025</p>
+            </a>
+        </div>
+        <div class="folder-item">
+            <a href="batch details/2023-2026/batch 2023-2026.html">
+                <img src="folder img.png" alt="Folder Image 2" class="folder-image">
+                <p class="folder-text">2023-2026</p>
+            </a>
+        </div>
+        <div class="folder-item">
+             <a href="batch details/2024-2027/batch 2024-2027.html">
+                <img src="folder img.png"  alt="Folder Image 3" class="folder-image">
+                <p class="folder-text">2024-2027</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
